@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 
+
+
 my $blocksize = 512;
 my $size_in_mb = $ARGV[1];
 my $filename = "$ARGV[0].ext4";
@@ -63,4 +65,7 @@ if ($@) {
 print "Done!\n";
 exit(0);
 
-
+sub usage {
+	print "usage: perl miniverse.pl [/path/to/mount/point] [size of new file system, in MB]\n";
+	exit(1);
+}
