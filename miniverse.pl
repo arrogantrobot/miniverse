@@ -46,7 +46,7 @@ my $loopnum = 0;
 
 map {
 	if ($_ =~ m/loop/) {
-		$_ =~ m/loop(\d)/;
+		$_ =~ m/loop(\d)/; #FIXME this only allows for 10 loop devices
 		$loopnum = $1 + 1;
 	}
 } @mounts;
