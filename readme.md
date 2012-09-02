@@ -11,3 +11,6 @@ the user to effortlessly create a filesystem of an exact size, tailor-made
 for recreating that odd example where the header of your file can be written
 to disk, but then the first write of the body is rejected. Or what-have-you.
 Fill in any low disk space scenario and test away.
+
+I copied this method of creating a loop device in a file from [Mike Chirico's
+blog post] (http://freecode.com/articles/virtual-filesystem-building-a-linux-filesystem-from-an-ordinary-file "freecode blog").
